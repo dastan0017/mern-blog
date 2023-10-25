@@ -20,7 +20,8 @@ app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
 
 // mongoose.connect('mongodb+srv://blog:RD8paskYC8Ayj09u@cluster0.pflplid.mongodb.net/?retryWrites=true&w=majority');
-mongoose.connect('mongodb+srv://esensteam:aiNWWEEHHeqaIc67@cluster0.uyi1k99.mongodb.net/?retryWrites=true&w=majority');
+// mongodb+srv://esensteam:Wy90h4AsyBCWOIBW@personal.rlru87t.mongodb.net/?retryWrites=true&w=majority
+mongoose.connect('mongodb+srv://esensteam:Wy90h4AsyBCWOIBW@personal.rlru87t.mongodb.net/?retryWrites=true&w=majority');
 app.post('/register', async (req,res) => {
   const {username,password} = req.body;
   try{
